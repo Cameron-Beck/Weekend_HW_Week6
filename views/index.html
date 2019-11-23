@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../public/css/index.css" />
+    <script src="../models/app.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+  <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+          <i class="fa fa-bars"></i>
+      </label>
+  <a href="#" class="logo">logo</a>
+  <input type="checkbox" id="chkToggle"></input>
+  <ul class="main-nav" id="js-menu">
+    <li>
+      <a href="#" class="nav-links">Home</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Products</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">About Us</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Contact Us</a>
+    </li>
+    <li>
+      <a href="#" class="nav-links">Blog</a>
+    </li>
+  </ul>
+</nav>
+<form id="new-recipe">
+  <div id="form-wrapper">
+    <div class="form-item">
+      <label for="name" class="primary">Name</label>
+      <input type="text" id="title" required/>
+    </div>
+
+    <div class="form-item">
+      <label for="author" class="primary">Author</label>
+      <input type="text" id="author" required/>
+    </div>
+
+    <div class="form-item">
+      <label for="category" class="primary">Category</label>
+      <select id="category">
+        <option value="" disabled selected></option>
+        <option value="Breakfast">Breakfast</option>
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+        <option value="Flexable">Flexable</option>
+      </select>
+    </div>
+  </div>
+  <input type="submit" value="save"/>
+  <button id="delete-all">Delete All</button>
+</form>
+<h1>Recipes</h1>
+<ul id="reading-list"></ul>
+  </body>
+</html>
